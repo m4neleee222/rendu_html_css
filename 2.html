@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball Xenoverse - Présentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212; 
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a1a;
+    border-bottom: 3px solid #FF6600; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF6600;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px; 
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FF6600;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+    padding: 20px;
+    background-image: url('1981581.webp');
+background-size: cover;
+background-position: center;
+}
+
+.hero h1 {
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+.hero p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); 
+}
+    font-size: 3.5rem;
+    color: #FF6600;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #FF6600;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    padding: 80px 10%;
+    gap: 40px;
+}
+
+.section-text {
+    flex: 1 1 400px; 
+}
+
+.section-text h2 {
+    color: #FF6600;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section-text p {
+    margin-bottom: 15px;
+    color: #cccccc;
+}
+
+.section-image {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.section-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+}
+.features-section {
+    padding: 60px 10%;
+    background-color: #1a1a1a;
+}
+
+.features-section h2 {
+    text-align: center;
+    color: #FF6600;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+
+.card {
+    flex: 1 1 300px; 
+    background-color: #262626;
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 4px solid #0033CC; 
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #aaaaaa;
+}
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #121212;
+    border-top: 1px solid #333;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .section-container {
+        padding: 40px 5%;
+    }
+}
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 40px;                        
+    border-radius: 15px;                  
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+</style>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Dragon ball Xenoverse</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#le-jeu">Le Jeu</a></li>
+                <li><a href="personnages.html">Personnages</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Dragon Ball Xenoverse</h1>
+            <p>Voyagez dans le temps, corrigez l'histoire et devenez le héros de la Patrouille Temporelle.</p>
+            <a href="#le-jeu" class="btn">Découvrir le jeu</a>
+        </div>
+    </section>
+    <section id="le-jeu" class="section-container">
+        <div class="section-text">
+            <h2>Qu'est-ce que c'est ?</h2>
+            <p>Dragon Ball Xenoverse est une série de jeux vidéo de combat et de rôle (RPG) développée par Dimps et éditée par Bandai Namco. Le premier opus est sorti en 2015.</p>
+            <p>Le concept principal est unique : vous ne jouez pas seulement un personnage Vous créez votre <strong>propre personnage</strong> le Patrouilleur Temporel et vous voyagez à travers les différentes sagas de Dragon Ball pour empêcher des anomalies temporelles de modifier l'histoire.</p>
+            <p>Le jeu a connu un immense succès grâce à sa personnalisation poussée et son gameplay . Une suite, <em>Dragon Ball Xenoverse 2</em>, est sortie en 2016 et continue encore aujourd'hui de recevoir du contenu additionnel.</p>
+        </div>
+        <div class="section-image">
+            <img src="580282 (1).jpg" alt="Gameplay de Dragon Ball Xenoverse">
+        </div>
+    </section>
+    <section id="personnages" class="features-section">
+        <h2>Les points forts de la licence</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Création de Personnage</h3>
+                <p>Choisissez parmi 5 races (Saiyan, Namek, Terrien, Majin, Frieza) et personnalisez votre avatar.</p>
+            </div>
+            <div class="card">
+                <h3>Voyage Temporel</h3>
+                <p>Revivez les moments cultes de l'anime et du manga, mais avec des rebondissements : vous devez réparer les failles temporelles créées par des ennemis.</p>
+            </div>
+            <div class="card">
+                <h3>Combats Dynamiques</h3>
+                <p>Affrontez des ennemis en 3D dans des arènes destructibles, utilisez des transformations et des attques ultimes dévastatrices.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Références : Bandai Namco, Dimps, Toei Animation.</p>
+    </footer>
+
+</body>
+</html>
+
